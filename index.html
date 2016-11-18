@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guess</title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="pickNumber();">
+    <div class="container" id="container">
+        <input id="guessInput" class="input" placeholder="Choose a number from 1-10"></input>
+
+        <button id="submit" class="button" onclick="makeGuess();">Enter</button>
+        <button id="retry" class="retry" onclick="reset();"><i class="fa fa-refresh" aria-hidden="true"></i> Retry</button>
+        <p id="responseDiv"></p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
